@@ -7,8 +7,11 @@ export 'change_password/change_password_widget.dart' show ChangePasswordWidget;
 export 'food_checkout/food_checkout_widget.dart' show FoodCheckoutWidget;
 export 'donation_checkout/donation_checkout_widget.dart'
     show DonationCheckoutWidget;
+export 'food_and_donation_checkout/food_and_donation_checkout_widget.dart'
+    show FoodAndDonationCheckoutWidget;
 export 'order_history/order_history_widget.dart' show OrderHistoryWidget;
-export 'food_menu_list/food_menu_list_widget.dart' show FoodMenuListWidget;
+export 'salad_counter_list/salad_counter_list_widget.dart'
+    show SaladCounterListWidget;
 export 'food_vendor_list/food_vendor_list_widget.dart'
     show FoodVendorListWidget;
 export 'donation_vendor_list/donation_vendor_list_widget.dart'

@@ -2,8 +2,8 @@ import '../flutter_flow/flutter_flow_drop_down.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../food_menu_list/food_menu_list_widget.dart';
 import '../ngo_food_menu_list/ngo_food_menu_list_widget.dart';
+import '../salad_counter_list/salad_counter_list_widget.dart';
 import '../sign_in/sign_in_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -371,7 +371,8 @@ class _FoodVendorListWidgetState extends State<FoodVendorListWidget> {
                               await Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => FoodMenuListWidget(),
+                                  builder: (context) =>
+                                      SaladCounterListWidget(),
                                 ),
                               );
                             },
@@ -501,7 +502,8 @@ class _FoodVendorListWidgetState extends State<FoodVendorListWidget> {
                               await Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => FoodMenuListWidget(),
+                                  builder: (context) =>
+                                      SaladCounterListWidget(),
                                 ),
                               );
                             },
@@ -631,7 +633,8 @@ class _FoodVendorListWidgetState extends State<FoodVendorListWidget> {
                               await Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => FoodMenuListWidget(),
+                                  builder: (context) =>
+                                      SaladCounterListWidget(),
                                 ),
                               );
                             },

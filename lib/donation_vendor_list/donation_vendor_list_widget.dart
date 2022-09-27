@@ -3,6 +3,7 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_radio_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
+import '../main.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,12 +38,23 @@ class _DonationVendorListWidgetState extends State<DonationVendorListWidget> {
             size: 30,
           ),
           onPressed: () async {
-            Navigator.pop(context);
+            await Navigator.push(
+              context,
+              PageTransition(
+                type: PageTransitionType.rightToLeft,
+                duration: Duration(milliseconds: 300),
+                reverseDuration: Duration(milliseconds: 300),
+                child: NavBarPage(initialPage: 'foodVendorList'),
+              ),
+            );
           },
         ),
         title: Text(
-          'Your Humble Donation',
-          style: FlutterFlowTheme.of(context).title2,
+          'Your Humble Contribution',
+          style: FlutterFlowTheme.of(context).subtitle1.override(
+                fontFamily: 'Urbanist',
+                color: Color(0xFF100E0E),
+              ),
         ),
         actions: [
           Padding(
@@ -141,9 +153,9 @@ class _DonationVendorListWidgetState extends State<DonationVendorListWidget> {
                                         children: [
                                           FlutterFlowRadioButton(
                                             options: [
-                                              '₹50',
+                                              '₹40',
                                               '₹100',
-                                              '₹150',
+                                              '₹200',
                                               'All in wallet (₹128)'
                                             ].toList(),
                                             onChanged: (value) {

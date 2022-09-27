@@ -1,19 +1,19 @@
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../food_checkout/food_checkout_widget.dart';
+import '../food_and_donation_checkout/food_and_donation_checkout_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class FoodMenuListWidget extends StatefulWidget {
-  const FoodMenuListWidget({Key? key}) : super(key: key);
+class SaladCounterListWidget extends StatefulWidget {
+  const SaladCounterListWidget({Key? key}) : super(key: key);
 
   @override
-  _FoodMenuListWidgetState createState() => _FoodMenuListWidgetState();
+  _SaladCounterListWidgetState createState() => _SaladCounterListWidgetState();
 }
 
-class _FoodMenuListWidgetState extends State<FoodMenuListWidget> {
+class _SaladCounterListWidgetState extends State<SaladCounterListWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -67,7 +67,8 @@ class _FoodMenuListWidgetState extends State<FoodMenuListWidget> {
                           await Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FoodCheckoutWidget(),
+                              builder: (context) =>
+                                  FoodAndDonationCheckoutWidget(),
                             ),
                           );
                         },
@@ -178,7 +179,8 @@ class _FoodMenuListWidgetState extends State<FoodMenuListWidget> {
                           await Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FoodCheckoutWidget(),
+                              builder: (context) =>
+                                  FoodAndDonationCheckoutWidget(),
                             ),
                           );
                         },
@@ -289,7 +291,8 @@ class _FoodMenuListWidgetState extends State<FoodMenuListWidget> {
                           await Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FoodCheckoutWidget(),
+                              builder: (context) =>
+                                  FoodAndDonationCheckoutWidget(),
                             ),
                           );
                         },
@@ -400,7 +403,8 @@ class _FoodMenuListWidgetState extends State<FoodMenuListWidget> {
                           await Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FoodCheckoutWidget(),
+                              builder: (context) =>
+                                  FoodAndDonationCheckoutWidget(),
                             ),
                           );
                         },
